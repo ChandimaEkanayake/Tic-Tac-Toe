@@ -1,0 +1,99 @@
+
+    .location-card {
+      display: flex;
+      max-width: 800px;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      margin: 20px;
+      text-align: left ;
+    }
+
+    .location-image {
+      width: 300px;
+      flex-shrink: 0;
+    }
+
+    .location-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .location-content {
+      padding: 24px;
+      flex-grow: 1;
+    }
+
+    .location-header {
+      margin-bottom: 20px;
+      align-items: left;
+      justify-content: space-between;
+    }
+
+    .location-country {
+      display: flex;
+      align-items: left;
+      gap: 8px;
+      margin-bottom: 8px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .pin-icon {
+      width: 16px;
+      height: 16px;
+      color: #ff5a5f;
+    }
+
+    .maps-link {
+      color: #999;
+      text-decoration: none;
+      margin-left: 8px;
+      font-size: 14px;
+      transition: color 0.2s;
+    }
+
+    .maps-link:hover {
+      color: #666;
+      text-decoration: underline;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 32px;
+      color: #333;
+    }
+
+    .location-date {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 16px;
+    }
+
+    .location-description {
+      color: #444;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .location-card {
+        flex-direction: column;
+        margin: 16px;
+      }
+
+      .location-image {
+        width: 100%;
+        height: 250px;
+      }
+
+      .location-content {
+        padding: 16px;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+    }
